@@ -3,13 +3,15 @@ $:.push File.expand_path("../lib", __FILE__)
 require "unification_assertion/version"
 
 Gem::Specification.new do |s|
-  s.name        = "unification_assertion"
+  s.name        = "justinf-unification_assertion"
   s.version     = UnificationAssertion::VERSION
   s.authors     = ["Soutaro Matsumoto"]
   s.email       = ["matsumoto@soutaro.com"]
   s.homepage    = "https://github.com/soutaro/unification_assertion"
   s.summary     = "Assertion to test unifiability of two structures"
-  s.description = "UnificationAssertion defines +assert_unifiable+ assertion to test if given two values are unifiable."
+  s.description = "UnificationAssertion defines +assert_unifiable+ assertion to test if given two values are unifiable.
+I only made this gem because Soutaro hadn't pushed it to rubygems yet.
+  "
 
   s.rubyforge_project = "unification_assertion"
 
