@@ -143,3 +143,12 @@ module UnificationAssertion
   end
 end
 
+if defined?(RSpec)
+  RSpec::Matchers.define :unify do |expected|
+    match do |actual|
+      UnificationAssertion.unify([[actual, expected]]) do |a, b|
+        a.should == b
+      end
+    end
+  end
+end
